@@ -1,0 +1,400 @@
+.main-left {
+    width: 360px;
+}
+
+.main-middle {
+    width: 700px;
+}
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+}
+
+.main-middle {
+    margin-right: auto;
+    margin-left: 72px;
+}
+
+.main-left {
+    margin-left: 10px;
+}
+
+.main-left>li {
+    width: 350px;
+    height: 58px;
+    border-radius: 8px;
+
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.main-left>li:hover {
+    background-color: lightgray;
+}
+
+.main-left>li>span {
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.main-left>li>div {
+    border-radius: 50%;
+    border: 0.5px solid gray;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+}
+
+hr {
+    border: none;
+    border-top: 0.1px solid #d2d2d2;
+}
+
+.main-middle>.story {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 290px;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+.main-middle>.create {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+.main-middle>.feed {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+.main-left {
+    width: 360px;
+}
+
+.main-middle {
+    width: 700px;
+}
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+}
+
+.main-middle {
+    margin-right: auto;
+    margin-left: 72px;
+}
+
+.main-left {
+    margin-left: 10px;
+}
+
+.main-left>li {
+    width: 350px;
+    height: 58px;
+    border-radius: 8px;
+
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.main-left>li:hover {
+    background-color: lightgray;
+}
+
+.main-left>li>span {
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.main-left>li>div {
+    border-radius: 50%;
+    border: 0.5px solid gray;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+}
+
+hr {
+    border: none;
+    border-top: 0.1px solid #d2d2d2;
+}
+
+.main-middle>.story {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 290px;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+.main-middle>.create {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+.main-middle>.feed {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+.menu-modal {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+
+    width: 560px;
+
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px lightgray;
+    background-color: #f2f2f2;
+
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.menu-modal>span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.menu-modal>.content {
+    align-items: flex-start;
+}
+
+.social {
+    width: 280px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px lightgray;
+
+    padding: 15px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.modal-search-box {
+    width: 240px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.modal-search-box>input {
+    width: 200px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.social>span {
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.social>li {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.social>li>img {
+    margin-right: 5px;
+}
+
+.social>li:hover {
+    background-color: #f2f2f2;
+}
+
+.social>li>div {
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.social>li>div>span {
+    font-size: 14px;
+}
+
+.social>li>div>p {
+    font-size: 12px;
+    color: gray;
+}
+
+.modal-create {
+    width: 240px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px lightgray;
+
+    padding: 15px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.modal-create>span {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.modal-create>li {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.modal-create>hr {
+    width: 100%;
+}
+
+.modal-create>li:hover {
+    background-color: #f2f2f2;
+}
+
+.modal-create>li>div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e4e6eb;
+    overflow: hidden;
+}
+
+.modal-create>li>span {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.account-modal {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+
+    width: 360px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px lightgray;
+    background-color: white;
+
+    display: none;
+}
+
+.account-info {
+    width: 325px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px lightgray;
+
+    margin-bottom: 10px;
+}
+
+.account-profile {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.account-profile:hover {
+    background-color: #f2f2f2;
+}
+
+.account-profile>div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #f2f2f2;
+
+    margin-right: 10px;
+}
+
+.account-profile>span {
+    margin-right: auto;
+}
+
+.account-info>hr {
+    width: 100%;
+}
+
+.account-info>div:last-child {
+    color: blue;
+    height: 28px;
+    border-radius: 8px;
+    padding: 15px 5px;
+
+    align-items: flex-start;
+}
+
+.account-info>div {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.account-info>div:hover {
+    background-color: #f2f2f2;
+}
+
+.account-modal>li>div {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #e4e6eb;
+}
+
+.account-modal>li>span {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.account-modal>li {
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.account-modal>li:hover {
+    background-color: #f2f2f2;
+}
+
+.account-modal>li:hover>div {
+    filter: brightness(0.95);
+}

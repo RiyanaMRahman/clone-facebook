@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>facebook - clone coding</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image" href="assets/image/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/gnb.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/feed.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="gnb flex-row">
+    <div class="gnb-left flex-row">
+      <img width="40" src="assets/image/logo.png" />
+      <div class="search-box flex-row">
+        <i id="search-icon" class="bi bi-search"></i>
+        <input placeholder="Search Facebook" type="text" onfocus="hideIcon()" onblur="showIcon()" />
+      </div>
+    </div>
+    <div class="nav-middle flex-row">
+      <div class="nav-tab flex-row">
+        <img src="assets/image/gnb/1.png" />
+      </div>
+      <div class="nav-tab flex-row">
+        <img src="assets/image/gnb/2.png" />
+      </div>
+      <div class="nav-tab flex-row">
+        <img src="assets/image/gnb/3.png" />
+      </div>
+      <div class="nav-tab flex-row">
+        <img src="assets/image/gnb/4.png" />
+      </div>
+      <div class="nav-tab flex-row">
+        <img src="assets/image/gnb/5.png" />
+      </div>
+    </div>
+
+
+    <div class="nav-right flex-row">
+      <div onclick="menuModal()" class="nav-tab-right flex-row">
+        <img id="nav-menu" src="assets/image/gnb/6.png" onmouseover="hover(this)" onmouseout="unhover(this)" />
+      </div>
+      <div class="nav-tab-right flex-row">
+        <img src="assets/image/gnb/7.png" />
+      </div>
+      <div class="nav-tab-right flex-row">
+        <img src="assets/image/gnb/8.png" />
+      </div>
+      <div onclick="accountModal()" class="nav-tab-right flex-row">
+        <img src="assets/image/gnb/9.jpg" />
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="main flex-row">
+    <div class="main-left">
+      <li class="flex-row">
+        <div>
+          <img src="assets/image/feed/1.jpg">
+        </div>
+        <span>Yansss</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/2.png">
+        <span>Find friends</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/4.png">
+        <span>Groups</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/3.png">
+        <span>Memories</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/5.png">
+        <span>Watch</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/6.png">
+        <span>Saved</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/7.png">
+        <span>Pages</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/8.png">
+        <span>Event</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/9.png">
+        <span>Most recent</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/10.png">
+        <span>Favorites</span>
+      </li>
+
+      <li class="flex-row">
+        <img src="assets/image/feed/seemore.png">
+        <span>See More</span>
+      </li>
+    </div>
+
+    <div class="main-middle flex-col">
+      <div class="story">
+        <div class="story-top flex-row">
+          <div class="flex-row">Stories</div>
+          <div class="flex-row">Reels</div>
+          <div class="flex-row">Roms</div>
+        </div>
+
+        <div class="story-bottom flex-row">
+          <div class="profile flex-col">
+            <div class="profile-image"></div>
+            <span>Create Story</span>
+            <div class="plus flex-row">
+              <img src="assets/image/feed/12.png">
+            </div>
+          </div>
+          <div class="description flex-col">
+            <li>
+              <img src="assets/image/feed/13.png">
+              Share everyday moments with friends and families
+            </li>
+            <li class="flex-row">
+              <img src="assets/image/feed/14.png">
+              kedua
+            </li>
+            <li class="flex-row">
+              <img src="assets/image/feed/15.png">
+              Ketiga
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="create flex-col">
+        <div class="create-top flex-row">
+          <div class="create-profile">
+            <img src="assets/image/feed/1.jpg" />
+          </div>
+          <input onfocus="showButton()" type="text" placeholder="Apa yang kamu pikirkan, Yansss?" />
+        </div>
+        <div class="create-bottom flex-row">
+          <li class="flex-row">
+            <img src="assets/image/feed/16.png" />
+            <span>Live Video</span>
+          </li>
+          <li class="flex-row">
+            <img src="assets/image/feed/17.png" />
+            <span>Photo/video</span>
+          </li>
+          <li class="flex-row">
+            <img src="assets/image/feed/18.png" />
+            <span>Feeling /activity</span>
+          </li>
+        </div>
+        <button onClick="post()" id="btn-post">Let's Post it!</button>
+      </div>
+
+      <div class="feed flex-col">
+        <div class="feed-top flex-row">
+          <div class="feed-frofile flex-row">
+            <img width="40" src="assets/image/feed/19.png">
+          </div>
+          <div class="feed-name flex-col">
+            <span>Spongebob</span>
+            <span>Sponsored <img src="assets/image/feed/21.png"></span>
+          </div>
+
+          <div class="feed-more flex-row">
+            <img src="assets/image/feed/20.png">
+          </div>
+        </div>
+        <p>The SpongeBob Official Channel is the best place to see Nickelodeonb s SpongeBob SquarePants on YouTube! Come
+          follow the adventures of the world's!</p>
+        <img src="assets/image/feed/22.png">
+
+        <div class="feed-like flex-row">
+          <img src="assets/image/feed/23.png">
+          <span class="like-count">55k</span>
+          <span>Shared</span>
+        </div>
+        <div class="feed-buttons flex-row">
+          <li class="flex-row">
+            <img width="24" src="assets/image/feed/24.png">
+            <span>Like</span>
+          </li>
+
+          <li class="flex-row">
+            <img width="24" src="assets/image/feed/25.png">
+            <span>Comment</span>
+          </li>
+
+          <li class="flex-row">
+            <img width="24" src="assets/image/feed/26.png">
+            <span>Shared</span>
+          </li>
+        </div>
+      </div>
+
+      <div class="menu-modal" id="menu-modal">
+        <span>Menu</span>
+        <div class="content flex-row">
+          <div class="social flex-col">
+            <div class="modal-search-box flex-row">
+              <i id="search-icon" class="bi bi-search"></i>
+              <input type="text" />
+            </div>
+            <span>Social</span>
+            <li class="flex-row">
+              <img width="36" src="assets/image/modal/1.png" />
+              <div class="flex-col">
+                <span>Events</span>
+                <p>
+                  Organize or find events and other thing to do in online or
+                  nearby.
+                </p>
+              </div>
+            </li>
+            <li class="flex-row">
+              <img width="36" src="assets/image/modal/2.png" />
+              <div class="flex-col">
+                <span>Find friends</span>
+                <p>Search for friends or people you may know</p>
+              </div>
+            </li>
+            <li class="flex-row">
+              <img width="36" src="assets/image/modal/3.png" />
+              <div class="flex-col">
+                <span>Groups</span>
+                <p>Connect with people who share your interests</p>
+              </div>
+            </li>
+            <li class="flex-row">
+              <img width="36" src="assets/image/modal/4.png" />
+              <div class="flex-col">
+                <span>News feed</span>
+                <p>See relevant posts from people and pages you follow</p>
+              </div>
+            </li>
+            <li class="flex-row">
+              <img width="36" src="assets/image/modal/5.png" />
+              <div class="flex-col">
+                <span>Favorites</span>
+                <p>View posts by Favorites</p>
+              </div>
+            </li>
+          </div>
+          <div class="modal-create flex-col">
+            <span>Create</span>
+            <li class="flex-row">
+              <div class="flex-row">
+                <img width="22" src="assets/image/modal/6.png" />
+              </div>
+              <span>Post</span>
+            </li>
+            <li class="flex-row">
+              <div class="flex-row">
+                <img width="22" src="assets/image/modal/7.png" />
+              </div>
+              <span>Story</span>
+            </li>
+            <li class="flex-row">
+              <div class="flex-row">
+                <img width="22" src="assets/image/modal/8.png" />
+              </div>
+              <span>Room</span>
+            </li>
+            <hr />
+            <li class="flex-row">
+              <div class="flex-row">
+                <img width="22" src="assets/image/modal/9.png" />
+              </div>
+              <span>Page</span>
+            </li>
+            <li class="flex-row">
+              <div class="flex-row">
+                <img width="22" src="assets/image/modal/10.png" />
+              </div>
+              <span>Ad</span>
+            </li>
+            <li class="flex-row">
+              <div class="flex-row">
+                <img width="22" src="assets/image/modal/11.png" />
+              </div>
+              <span>Group</span>
+            </li>
+            <li class="flex-row">
+              <div class="flex-row">
+                <img width="22" src="assets/image/modal/12.png" />
+              </div>
+              <span>Event</span>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="account-modal" id="account-modal">
+        <div class="account-info flex-col">
+          <div class="account-profile flex-row">
+            <div class="flex-row">
+              <img width="44" src="assets/image/gnb/9.jpg" />
+            </div>
+            <span>Yansss</span>
+          </div>
+          <hr />
+          <div class="flex-col">See all profiles</div>
+        </div>
+        <li class="flex-row">
+          <div class="flex-row">
+            <img width="22" src="assets/image/modal/13.png" />
+          </div>
+          <span>Settings & privacy</span>
+          <img width="24" src="assets/image/modal/18.png" />
+        </li>
+        <li class="flex-row">
+          <div class="flex-row">
+            <img width="22" src="assets/image/modal/14.png" />
+          </div>
+          <span>Help & support</span>
+          <img width="24" src="assets/image/modal/18.png" />
+        </li>
+        <li class="flex-row">
+          <div class="flex-row">
+            <img width="22" src="assets/image/modal/15.png" />
+          </div>
+          <span>Display & accessibility</span>
+          <img width="24" src="assets/image/modal/18.png" />
+        </li>
+        <li class="flex-row">
+          <div class="flex-row">
+            <img width="22" src="assets/image/modal/16.png" />
+          </div>
+          <span>Give feedback</span>
+        </li>
+        <li class="flex-row">
+          <div class="flex-row">
+            <img width="22" src="assets/image/modal/17.png" />
+          </div>
+          <span>Log Out</span>
+        </li>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let showIcon = () => $("#search-icon").show();
+    let hideIcon = () => $("#search-icon").hide();
+
+    function menuModal() {
+      let status = $("#menu-modal").css("display");
+      if (status == "block") {
+        $("#menu-modal").hide();
+        $("#nav-menu").attr("src", "assets/image/gnb/6.png");
+      } else {
+        $("#menu-modal").show();
+        $("#nav-menu").attr("src", "assets/image/gnb/10.png");
+      }
+    }
+
+    function accountModal() {
+      let status = $("#account-modal").css("display");
+      if (status == "block") {
+        $("#account-modal").hide();
+      } else {
+        $("#account-modal").show();
+      }
+    }
+
+    let showButton = (element) => {
+
+      if (element.value.length > 0) {
+        $("#btn-post").show();
+        $("#btn-post").addClass("button-active");
+      } else {
+        $("#btn-post").hide();
+        $("#btn-post").removeClass("button-active");
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>
